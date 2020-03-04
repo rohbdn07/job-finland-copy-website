@@ -3,40 +3,97 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  font-size: 16px;
+}
 .nav-color {
-  background-color: rgba(32, 32, 214, 0.856);
-}
-ul li a {
-  color: rgb(250, 252, 255);
+  background-color: rgba(20, 20, 221, 0.856);
 }
 
-.nav-titile {
+.header .container .top-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+}
+.header .container .top-row .right-row {
+  display: grid;
+  justify-self: right;
+  margin: 20px;
+}
+/* ---------------Nav-bar------------------ */
+.nab-bar ul li a {
+  color: rgb(237, 241, 246);
+  cursor: pointer;
+}
+
+.nav-title ul li {
   display: inline-block;
-
-  justify-items: right;
-  border: 1px solid red;
+  text-decoration: none;
+  padding: 10px;
 }
-.image {
+.nav-title ul li a {
+  text-decoration: none;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.nav-title ul li a .search {
+  justify-self: right;
+}
+.nav-title ul li ul {
+  display: none;
+}
+.nab-bar ul li:hover ul {
+  display: block;
+  position: absolute;
+}
+/* ---------------Nav-bar-end here------------------ */
+
+/* ------------------top-image-section------------ */
+.main-pic {
   background-image: url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
   background-position: center center;
   background-repeat: no-repeat;
-  height: 60vh;
+  height: 70vh;
   width: 100%;
 }
-body {
-  font-size: 16px;
-  line-height: 1.6;
+.text-center {
+  display: inline;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
 }
-
 h1 {
-  font-size: 48px;
+  font-size: 70px;
 }
+/* -------------Explore by category----- */
+.middle-text {
+  margin-left: 30px;
+}
+.middle-text h2 {
+  font-size: 30px;
+  margin-top: 35px;
+
+  color: blue;
+}
+.middle-text p {
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+.pd-t {
+  padding-top: 50px;
+  border: 1px solid red;
+}
+/* -------------Explore by category End Here----- */
+/* ------------------top-image-section--end here------------ */
 .images {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  grid-auto-flow: row;
+  margin-left: 30px;
+  grid-gap: 15px;
 }
 
 .bg-image {
