@@ -280,7 +280,8 @@ h1 {
   color: var(--color);
   font-size: 16px;
   padding: 70px 60px;
-  height: 40vh;
+  height: 70vh;
+  overflow: hidden;
 }
 .middle-footer li a:hover,
 .right-footer li a:hover {
