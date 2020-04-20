@@ -16,6 +16,7 @@ body {
   position: relative;
   margin: 0px 150px 0px 150px;
   background-color: rgba(139, 139, 139, 0.342);
+ 
 }
 
 p {
@@ -93,6 +94,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   height: 80vh;
+  background-attachment: fixed;
 }
 
 .text-center {
