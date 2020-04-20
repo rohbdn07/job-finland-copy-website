@@ -14,7 +14,7 @@ body {
 }
 .whole-container {
   position: relative;
-  margin: 25px 150px 0px 150px;
+  margin: 0px 150px 0px 150px;
   background-color: rgba(139, 139, 139, 0.342);
 }
 
@@ -55,7 +55,7 @@ p {
 /* ---------------Nav-bar------------------ */
 
 .nab-bar ul li a {
-  color: var(--color);
+  color: whitesmoke;
   cursor: pointer;
   text-decoration: none;
   padding: 10px;
@@ -73,15 +73,15 @@ p {
   padding-bottom: 15px;
 }
 
-.nav-row li ul {
-  display: none;
+.nav-row .dropdown ul li {
+  display: inline-block;
+  position:  absolute;
 }
 
-.nav-row .dropdown a:hover ul {
-  display: inline-block;
-  position: absolute;
-  z-index: 100;
-}
+/* .nav-row .dropdown a:hover ul {
+  display: flex;
+  flex-direction: column;
+ } */
 
 /* ---------------Nav-bar-end here------------------ */
 
@@ -92,19 +92,19 @@ p {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 60vh;
+  height: 80vh;
 }
 
 .text-center {
   display: grid;
   text-align: center;
-  color: rgba(204, 209, 218, 0.986);
+  color: rgba(255, 255, 255, 0.986);
   justify-content: center;
   position: absolute;
   left: 50%;
-  top: 40%;
+  top: 50%;
   transform: translate(-50%, -50%);
-  width: 700px;
+  width: 800px;
   word-spacing: 5px;
 }
 .text-center span {
@@ -286,6 +286,7 @@ h1 {
 .middle-footer li a:hover,
 .right-footer li a:hover {
   text-decoration: underline;
+  color:whitesmoke;
 }
 .footer-row p {
   font-weight: normal;
@@ -315,4 +316,33 @@ li {
   font-size: 30px;
   color: rgba(196, 11, 11, 0.856);
   font-style: italic;
+}
+
+/* //////////////////////////scroll-button//////////////// */
+#back2Top {
+  width: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+  -moz-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  position: fixed;
+  bottom: 80px;
+  right: 10px;
+  background-color: #ddd;
+  color: rgba(211, 30, 24, 0.959);
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+#back2Top:hover {
+  background-color: #ddf;
+  color: #000;
 }
